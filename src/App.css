@@ -1,38 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 3vh;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom-nav {
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  bottom: 0;
+  text-align: center;
+  justify-content: center;
+  font-family: sans-serif;
+  z-index: 5;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-nav a,
+.bottom-nav a:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 5rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+  margin: 0 2rem;
+}
+
+.bottom-nav a:hover,
+.bottom-nav a:visited:hover {
+  color: #fff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
